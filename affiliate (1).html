@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikis Affiliate Marketing Cooperation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #4F46E5, #10B981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=modern%2520business%2520scene%2520with%2520laptop%2520and%2520charts%2520showing%2520affiliate%2520marketing%2520concept%252C%2520clean%2520minimal%2520design%2520with%2520blue%2520and%2520green%2520accents%252C%2520gradient%2520background%2520that%2520transitions%2520smoothly%2520from%2520white%2520on%2520left%2520to%2520soft%2520blue%2520on%2520right%252C%2520professional%2520atmosphere%252C%2520high%2520quality%2520digital%2520illustration&width=1600&height=800&seq=hero1&orientation=landscape');
+            background-size: cover;
+            background-position: center right;
+        }
+        
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        .custom-checkbox {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border: 2px solid #d1d5db;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .custom-checkbox:hover input ~ .checkmark {
+            border-color: #4F46E5;
+        }
+        
+        .custom-checkbox input:checked ~ .checkmark {
+            background-color: #4F46E5;
+            border-color: #4F46E5;
+        }
+        
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        
+        .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+        
+        .custom-checkbox .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: #4F46E5;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        .course-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=professional%2520online%2520course%2520concept%2520with%2520laptop%2520and%2520study%2520materials%252C%2520soft%2520blue%2520and%2520green%2520gradient%2520background%252C%2520clean%2520modern%2520design%252C%2520digital%2520learning%2520environment%252C%2520high%2520quality%2520digital%2520illustration&width=800&height=600&seq=course1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="font-['Pacifico'] text-2xl md:text-3xl gradient-text">Wikis</a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#intro" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="#concepts" class="text-gray-600 hover:text-primary transition-colors">Learn</a>
+                <a href="#course" class="text-gray-600 hover:text-primary transition-colors">Course</a>
+                <a href="#benefits" class="text-gray-600 hover:text-primary transition-colors">Benefits</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            
+            <div class="md:hidden w-10 h-10 flex items-center justify-center">
+                <button id="mobile-menu-button" class="text-gray-600">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="#intro" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="#concepts" class="text-gray-600 hover:text-primary transition-colors">Learn</a>
+                <a href="#course" class="text-gray-600 hover:text-primary transition-colors">Course</a>
+                <a href="#benefits" class="text-gray-600 hover:text-primary transition-colors">Benefits</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="w-full md:w-1/2 bg-white bg-opacity-90 p-8 md:p-12 rounded-lg shadow-lg fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Unlock Your Earning Potential</span> With Affiliate Marketing
+                </h1>
+                <p class="text-lg text-gray-700 mb-8">
+                    Learn how to generate passive income by promoting products you love. Our expert-led guidance will help you build a sustainable affiliate marketing business from scratch.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#course" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap pulse-animation">
+                        Get Started Today
+                    </a>
+                    <a href="#concepts" class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Introduction Section -->
+    <section id="intro" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What is Affiliate Marketing?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Affiliate marketing is a performance-based marketing strategy where businesses reward affiliates for each customer brought through the affiliate's marketing efforts.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+                        <i class="ri-link-m-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Promote Products</h3>
+                    <p class="text-gray-600">
+                        Recommend products or services to your audience through your unique affiliate links. No need to create or stock products yourself.
+                    </p>
+                </div>
+                
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mb-6">
+                        <i class="ri-shopping-cart-line ri-xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Earn Commissions</h3>
+                    <p class="text-gray-600">
+                        When someone makes a purchase through your affiliate link, you earn a commission. Some programs offer up to 50% or more of the sale value.
+                    </p>
+                </div>
+                
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.4s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-6">
+                        <i class="ri-global-line ri-xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Scale Your Business</h3>
+                    <p class="text-gray-600">
+                        Build multiple income streams by promoting various products across different platforms and reaching wider audiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Concepts Section -->
+    <section id="concepts" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Key Concepts for Beginners</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Understanding these fundamental concepts will help you build a strong foundation for your affiliate marketing journey.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+                            <i class="ri-user-search-line ri-lg text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Finding Your Niche</h3>
+                            <p class="text-gray-600 mb-4">
+                                Choose a specific market segment that you're passionate about and has profit potential. A focused niche allows you to establish yourself as an authority.
+                            </p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-primary mt-1 mr-2"></i>
+                                    <span>Research market demand and competition</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-primary mt-1 mr-2"></i>
+                                    <span>Align with your interests and expertise</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-primary mt-1 mr-2"></i>
+                                    <span>Evaluate profit potential and commission rates</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.2s;">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full mr-4">
+                            <i class="ri-store-2-line ri-lg text-secondary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Selecting Affiliate Programs</h3>
+                            <p class="text-gray-600 mb-4">
+                                Join reputable affiliate programs that offer quality products, fair commissions, and reliable tracking systems.
+                            </p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-secondary mt-1 mr-2"></i>
+                                    <span>Popular networks: Amazon, ShareASale, ClickBank</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-secondary mt-1 mr-2"></i>
+                                    <span>Evaluate commission structures and cookie duration</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-secondary mt-1 mr-2"></i>
+                                    <span>Check payment methods and thresholds</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.3s;">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-full mr-4">
+                            <i class="ri-megaphone-line ri-lg text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Building Your Platform</h3>
+                            <p class="text-gray-600 mb-4">
+                                Create a website, blog, or social media presence to showcase affiliate products and connect with your audience.
+                            </p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-orange-500 mt-1 mr-2"></i>
+                                    <span>Website options: WordPress, Wix, Squarespace</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-orange-500 mt-1 mr-2"></i>
+                                    <span>Content creation: blogs, reviews, comparisons</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-orange-500 mt-1 mr-2"></i>
+                                    <span>SEO fundamentals for organic traffic</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.4s;">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-full mr-4">
+                            <i class="ri-line-chart-line ri-lg text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Traffic & Conversion Strategies</h3>
+                            <p class="text-gray-600 mb-4">
+                                Learn effective methods to drive targeted traffic and optimize your conversion rates.
+                            </p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-purple-600 mt-1 mr-2"></i>
+                                    <span>Content marketing and value-based promotion</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-purple-600 mt-1 mr-2"></i>
+                                    <span>Email marketing and list building</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line ri-lg text-purple-600 mt-1 mr-2"></i>
+                                    <span>Social media and paid advertising basics</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Promotion Section -->
+    <section id="course" class="py-16 md:py-24 course-bg">
+        <div class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-95 p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto fade-in">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-0 md:pr-8">
+                        <span class="inline-block px-4 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium mb-6">Limited Time Offer</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Affiliate Marketing Mastery Course</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Fast-track your affiliate marketing success with our comprehensive, beginner-friendly course. Learn proven strategies from industry experts and start earning commissions faster.
+                        </p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-4">What You'll Learn:</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                        <i class="ri-check-line text-secondary"></i>
+                                    </div>
+                                    <span class="text-gray-700">Step-by-step affiliate marketing blueprint</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                        <i class="ri-check-line text-secondary"></i>
+                                    </div>
+                                    <span class="text-gray-700">Niche selection and market research techniques</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                        <i class="ri-check-line text-secondary"></i>
+                                    </div>
+                                    <span class="text-gray-700">High-converting content creation strategies</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                        <i class="ri-check-line text-secondary"></i>
+                                    </div>
+                                    <span class="text-gray-700">Traffic generation methods that work in 2025</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                        <i class="ri-check-line text-secondary"></i>
+                                    </div>
+                                    <span class="text-gray-700">Advanced conversion optimization tactics</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-lg text-center flex flex-col justify-center">
+                        <div class="mb-4">
+                            <span class="text-gray-500 line-through text-lg">₦5,000</span>
+                            <div class="text-4xl font-bold text-primary mt-1">₦1,500</div>
+                            <p class="text-gray-600 text-sm mt-1">One-time payment, lifetime access</p>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-time-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm">5+ hours of video content</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-file-list-3-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm">Downloadable resources</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-chat-1-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-700 text-sm">Community support</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://selar.co" target="_blank" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap pulse-animation">
+                            Enroll Now on Selar
+                        </a>
+                        
+                        <p class="text-gray-500 text-xs mt-4">Secure payment via Selar</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                                <i class="ri-user-star-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">500+</div>
+                                <div class="text-gray-500 text-sm">Students</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full mr-3">
+                                <i class="ri-star-line text-secondary ri-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">4.8/5</div>
+                                <div class="text-gray-500 text-sm">Rating</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-purple-100 rounded-full mr-3">
+                                <i class="ri-refresh-line text-purple-600 ri-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">30-Day</div>
+                                <div class="text-gray-500 text-sm">Money Back</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Affiliate Marketing?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover the advantages that make affiliate marketing one of the most accessible online business models today.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="space-y-8 fade-in">
+                        <div class="flex">
+                            <div class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-money-dollar-circle-line ri-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Low Startup Costs</h3>
+                                <p class="text-gray-600">
+                                    Start with minimal investment. No inventory, product development, or shipping logistics to manage. All you need is a computer and internet connection.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-14 h-14 flex items-center justify-center bg-green-100 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-time-line ri-xl text-secondary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Passive Income Potential</h3>
+                                <p class="text-gray-600">
+                                    Create content once and earn commissions repeatedly. Your affiliate links continue working for you 24/7, even while you sleep.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-14 h-14 flex items-center justify-center bg-purple-100 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-global-line ri-xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Location Freedom</h3>
+                                <p class="text-gray-600">
+                                    Work from anywhere in the world. All you need is an internet connection to manage your affiliate business.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-14 h-14 flex items-center justify-center bg-orange-100 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-scales-3-line ri-xl text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Scalable Business Model</h3>
+                                <p class="text-gray-600">
+                                    Expand your reach across multiple products, niches, and platforms. Your earning potential grows with your audience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2 fade-in">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Success by the Numbers</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Global Affiliate Marketing Industry</span>
+                                    <span class="font-bold text-primary">$17 Billion</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Average Commission Rates</span>
+                                    <span class="font-bold text-secondary">5-30%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-secondary h-2.5 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Businesses Using Affiliate Marketing</span>
+                                    <span class="font-bold text-purple-600">81%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 81%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Annual Growth Rate</span>
+                                    <span class="font-bold text-orange-500">10.1%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-orange-500 h-2.5 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <p class="text-gray-600 text-sm italic">
+                                Source: Industry reports and market analysis, 2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Real results from people who have taken our affiliate marketing course.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        "I was skeptical at first, but this course exceeded my expectations. Within 3 months, I was making consistent commissions promoting fitness products. The step-by-step approach made it easy to implement everything I learned."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Michael Adebayo</h4>
+                            <p class="text-gray-500 text-sm">Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        "The course taught me exactly how to find profitable niches and build an audience. I'm now earning more from my affiliate business than my 9-5 job. Best investment I've made in my future."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Chioma Nwosu</h4>
+                            <p class="text-gray-500 text-sm">Abuja, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md fade-in" style="transition-delay: 0.4s;">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        "As a complete beginner, I was worried it would be too technical. The course broke everything down into simple steps. I've now built a small but growing affiliate income promoting tech products I love."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Oluwaseun Adeleke</h4>
+                            <p class="text-gray-500 text-sm">Port Harcourt, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Have questions about affiliate marketing or our course? We're here to help you succeed.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden fade-in">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-8 md:p-12 bg-gradient-to-br from-primary to-secondary text-white">
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full mr-4 flex-shrink-0">
+                                        <i class="ri-mail-line text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium mb-1">Email</h4>
+                                        <p>wikistech07@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full mr-4 flex-shrink-0">
+                                        <i class="ri-phone-line text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium mb-1">Phone</h4>
+                                        <p>+234 803 123 4567</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full mr-4 flex-shrink-0">
+                                        <i class="ri-map-pin-line text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium mb-1">Location</h4>
+                                        <p>Lagos, Nigeria</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-12">
+                                <h4 class="font-medium mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
+                                        <i class="ri-facebook-fill text-white"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
+                                        <i class="ri-instagram-line text-white"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
+                                        <i class="ri-twitter-x-line text-white"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
+                                        <i class="ri-linkedin-fill text-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8 md:p-12">
+                            <form id="contactForm" class="space-y-6" method="POST" data-netlify="true" onsubmit="submit">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required></textarea>
+                                </div>
+                                
+                                <div>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" required>
+                                        <span class="checkmark"></span>
+                                        <span class="text-sm text-gray-600">I agree to receive communications from Wikis Affiliate Marketing</span>
+                                    </label>
+                                </div>
+                                
+                                <div>
+                                    <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <div id="formSuccess" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded">
+                                Thank you! Your message has been sent successfully.
+                            </div>
+                            
+                            <div id="formError" class="hidden mt-6 p-4 bg-red-100 text-red-700 rounded">
+                                Something went wrong. Please try again later.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="FAQ" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Get answers to common questions about affiliate marketing and our course.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto fade-in">
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-toggle w-full flex justify-between items-center focus:outline-none">
+                            <h3 class="text-xl font-semibold text-left">How much money can I make with affiliate marketing?</h3>
+                            <i class="ri-arrow-down-s-line text-primary text-2xl transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Earnings vary widely based on niche, effort, and strategy. Beginners might earn a few hundred dollars monthly, while experienced marketers can make thousands or even tens of thousands per month. Our course teaches you the strategies used by successful affiliates to maximize your earning potential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-toggle w-full flex justify-between items-center focus:outline-none">
+                            <h3 class="text-xl font-semibold text-left">Do I need a website to do affiliate marketing?</h3>
+                            <i class="ri-arrow-down-s-line text-primary text-2xl transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>While having a website is beneficial, it's not absolutely necessary. You can start with social media platforms, YouTube, or email marketing. However, a website gives you more control and can be more effective for certain strategies. Our course covers both website and non-website approaches to affiliate marketing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-toggle w-full flex justify-between items-center focus:outline-none">
+                            <h3 class="text-xl font-semibold text-left">How long does it take to start making money?</h3>
+                            <i class="ri-arrow-down-s-line text-primary text-2xl transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Most beginners start seeing their first commissions within 3-6 months of consistent effort. Some niches and strategies can yield faster results, while others take longer to build momentum. Our course focuses on both quick-win strategies and long-term sustainable approaches to help you start earning as soon as possible.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-toggle w-full flex justify-between items-center focus:outline-none">
+                            <h3 class="text-xl font-semibold text-left">What's included in the course?</h3>
+                            <i class="ri-arrow-down-s-line text-primary text-2xl transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Our comprehensive course includes 5+ hours of video lessons, downloadable resources, templates, and checklists. You'll get step-by-step guidance on niche selection, finding profitable products, creating converting content, driving traffic, and scaling your business. Plus, you'll have access to our community for ongoing support and networking.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-toggle w-full flex justify-between items-center focus:outline-none">
+                            <h3 class="text-xl font-semibold text-left">Is this course suitable for complete beginners?</h3>
+                            <i class="ri-arrow-down-s-line text-primary text-2xl transform transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Absolutely! Our course is designed with beginners in mind. We start with the fundamentals and gradually progress to more advanced strategies. No prior experience or technical skills are required. We explain everything in simple, easy-to-understand terms with practical examples and demonstrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">Ready to Start Your Affiliate Marketing Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto fade-in">
+                Don't miss this opportunity to learn proven strategies that can transform your financial future.
+            </p>
+            <div class="fade-in">
+                <a href="#course" class="bg-white text-primary px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap pulse-animation inline-block">
+                    Get Started Today for Just ₦1,500
+                </a>
+                <p class="mt-4 text-white text-opacity-80">
+                    One-time payment, lifetime access to all course materials
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="#" class="font-['Pacifico'] text-3xl text-white mb-6 inline-block">Wikis</a>
+                    <p class="text-gray-400 mb-6">
+                        Empowering entrepreneurs to build successful affiliate marketing businesses since 2020.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#intro" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#concepts" class="text-gray-400 hover:text-white transition-colors">Learn</a></li>
+                        <li><a href="#course" class="text-gray-400 hover:text-white transition-colors">Course</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors">Benefits</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Affiliate Programs</a></li>
+                        <li><a href="#FAQ" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Wikis Affiliate Marketing Cooperation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll animations
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Initial check on page load
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ toggles
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            const formError = document.getElementById('formError');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const formDataObj = {};
+                    formData.forEach((value, key) => {
+                        formDataObj[key] = value;
+                    });
+                    
+                    // Simulate form submission
+                    setTimeout(() => {
+                        // Success scenario
+                        contactForm.reset();
+                        formSuccess.classList.remove('hidden');
+                        formError.classList.add('hidden');
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formSuccess.classList.add('hidden');
+                        }, 5000);
+                        
+                        console.log('Form would be sent to wikistech07@gmail.com with data:', formDataObj);
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
